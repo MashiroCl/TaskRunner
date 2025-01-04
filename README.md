@@ -26,15 +26,15 @@ There is also an example file in [test_command.txt](./test_command.txt).
 ### Example
 ```bash
 # as foreground process
-python3 taskRunner.py -f test_command.txt
+$ python3 taskRunner.py -f test_command.txt
 ```
 ```bash
 # as background process
-nohup python3 taskRunner.py -f test_command.txt>run.log 2>&1 &
+$ nohup python3 taskRunner.py -f test_command.txt>run.log 2>&1 &
 ```
 
 ### Specify the Number of Processes
 To run the script with a custom number of parallel processes by specifing the `-p` option:
 ```bash
-python taskRunner.py -f test_command.txt -p 4
+$ python taskRunner.py -f test_command.txt -p 4
 ```
